@@ -6,6 +6,26 @@ This document presents a structured and well-documented list of issues discovere
 
 ---
 
+## 📚 Table of Contents
+
+- [🔐 User: Admin](#user-admin)
+  - [📋 Appointment Module](#appointment-module)
+    - [🐞 Bug 1: Phone Field Validation](#bug-1-phone-field-validation)
+    - [🐞 Bug 2: Slot Booking – No Clear/Delete Option](#bug-2-slot-booking--no-cleardelete-option)
+    - [🐞 Bug 3: Doctor Schedule Visibility Discrepancy](#bug-3-doctor-schedule-visibility-discrepancy)
+    - [🐞 Bug 4: Minor – No Phone Field Regulation](#bug-4-minor--no-phone-field-regulation)
+    - [🐞 Bug 5: View Appointments Link Not Working](#bug-5-view-appointments-link-not-working)
+- [🐞 Major Bug: Doctor Leave & Slot Logic](#major-bug-doctor-leave--slot-logic)
+  - [🐞 In Depth Analysis – Patient Records Missing](#in-depth-analysis-report--patient-records-missing-from-all-patient-list)
+- [🧑‍💼 User: Call Center](#user-call-center)
+  - [📅 Appointment Module](#appointment-module-1)
+    - [🐞 Bug 6: Autofill Not Working for Doctor Details](#bug-6-autofill-not-working-for-doctor-details)
+    - [🐞 Bug 7: Search Not Recognizing Alternative Phone Numbers](#bug-7-search-not-recognizing-alternative-phone-numbers)
+- [✅ Recommendations](#recommendations)
+- [📌 Notes](#notes)
+  
+---
+
 ## 🔐 User: Admin
 
 ### 📋 Appointment Module
