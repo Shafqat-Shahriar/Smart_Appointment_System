@@ -14,27 +14,44 @@ This document presents a structured and well-documented list of issues discovere
 
 * **Location:** `All Doctor List > Edit` and `Create Doctor`
 * **Issue:** The phone number field accepts alphabets and special characters.
-* **Expected:** Only numeric input should be accepted.
-* ![Bug Image](images/image1.png)
+* **Expected:** Only numeric input should be accepted. <br><br><br>
+## 📸 Bug Screenshot
+![Bug Image](images/image1.png)
+<br><br><br><br>
 
 #### 🐞 Bug 2: Slot Booking – No Clear/Delete Option
 
 * **Issue:** No button available to clear the slot list.
-* **Impact:** Admin must manually remove slots one by one.
+* **Impact:** Admin must manually remove slots one by one.<br><br><br>
+## 📸 Bug Screenshot
+![Bug Image](images/image2.png)
+<br><br><br><br>
 
 #### 🐞 Bug 3: Doctor Schedule Visibility Discrepancy
 
 * **Description:** Admin sets a schedule for a doctor on Friday, but Call Center user cannot see it.
-* **Impact:** Appointments cannot be booked for that doctor on Friday.
+* **Impact:** Appointments cannot be booked for that doctor on Friday.<br><br><br>
+## 📸 Bug Screenshot
+* **Admin View:**
+![Bug Image](images/image3.png)
+* **Call_center View:**
+![Bug Image](images/image4.png)
+<br><br><br><br>
 
 #### 🐞 Bug 4: Minor – No Phone Field Regulation
 
-* **Description:** Inconsistent validation when inputting phone numbers.
+* **Description:** Inconsistent validation when inputting phone numbers.<br><br><br>
+## 📸 Bug Screenshot
+![Bug Image](images/image5.png)
+<br><br><br><br>
 
 #### 🐞 Bug 5: View Appointments Link Not Working
 
 * **Location:** Admin dashboard
-* **Issue:** Clicking the link results in no action.
+* **Issue:** Clicking the link results in no action.<br><br><br>
+## 📸 Bug Screenshot
+![Bug Image](images/image10.png)
+<br><br><br><br>
 
 #### 🐞 Major Bug: Doctor Leave & Slot Logic
 
@@ -44,7 +61,10 @@ This document presents a structured and well-documented list of issues discovere
   * When slots are full, patients can still be added.
   * Patients whose appointments were scheduled for 9:00 AM and arrived at 2:00 PM disappeared after the doctor went on leave at 1:00 PM.
 * **Assumption:** System wrongly marks them as completed.
-* **Impact:** Critical patient data loss from "All Patients List".
+* **Impact:** Critical patient data loss from "All Patients List".<br><br><br>
+## 📸 Bug Screenshot
+![Bug Image](images/image.png)
+<br><br><br><br>
 
 ---
 
@@ -55,36 +75,40 @@ This document presents a structured and well-documented list of issues discovere
 #### 🐞 Bug 6: Autofill Not Working for Doctor Details
 
 * **Issue:** When an appointment is booked, the selected doctor's name and department are not autofilled.
-* **Expected:** Fields should prepopulate based on the selection.
+* **Expected:** Fields should prepopulate based on the selection.<br><br><br>
+## 📸 Bug Screenshot
+![Bug Image](images/image7.png)
+![Bug Image](images/image8.png)
+<br><br><br><br>
 
 #### 🐞 Bug 7: Search Not Recognizing Alternative Phone Numbers
 
-* **Issue:** Patients' alternate numbers cannot be used in the search bar.
+* **Issue:** Patients' alternate numbers cannot be used in the search bar.<br><br><br>
+## 📸 Bug Screenshot
+![Bug Image](images/image9.png)
+<br><br><br><br>
 
 ---
 
-## 📸 Screenshots
+## Conducted by:
 
-> Screenshots are referenced inline above. Make sure all image links render correctly on GitHub/GitLab.
+> Shafqat Shahriar Arefin 
 
 ---
 
 ## ✅ Recommendations
-
+<!--
 * Enforce input validation for phone number fields using regex or input masks.
 * Implement a "Clear All" button in Slot Booking.
 * Synchronize doctor schedules between Admin and Call Center views.
 * Disallow appointment creation for doctors on leave or fully booked.
 * Log and handle patient reschedules with timestamp-based verification.
 * Ensure search functionality indexes both primary and alternate numbers.
-
+-->
 ---
 
 ## 📌 Notes
 
-* Major bugs should be prioritized for immediate patching.
-* A regression test suite is advised post-resolution of each high-severity issue.
-* Coordinate with backend and frontend teams to confirm root causes and fix rollout.
 
 ---
 
