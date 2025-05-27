@@ -21,7 +21,7 @@ This document presents a structured and well-documented list of issues discovere
 
 #### 🐞 Bug 2: Slot Booking – No Clear/Delete Option
 
-* **Issue:** No button available to clear the slot list.
+* **Issue:** No button available to clear the entire slot list.
 * **Impact:** Admin must manually remove slots one by one.<br><br><br>
 ## 📸 Bug Screenshot
 ![Bug Image](images/image2.png)
@@ -42,7 +42,7 @@ This document presents a structured and well-documented list of issues discovere
 
 * **Description:** Inconsistent validation when inputting phone numbers.<br><br><br>
 ## 📸 Bug Screenshot
-![Bug Image](images/image5.png)
+![Bug Image](images/image05.png)
 <br><br><br><br>
 
 #### 🐞 Bug 5: View Appointments Link Not Working
@@ -53,7 +53,8 @@ This document presents a structured and well-documented list of issues discovere
 ![Bug Image](images/image10.png)
 <br><br><br><br>
 
-#### 🐞 Major Bug: Doctor Leave & Slot Logic
+---
+## 🐞 Major Bug: Doctor Leave & Slot Logic
 
 * **Symptoms:**
 
@@ -63,11 +64,39 @@ This document presents a structured and well-documented list of issues discovere
 * **Assumption:** System wrongly marks them as completed.
 * **Impact:** Critical patient data loss from "All Patients List".<br><br><br>
 ## 📸 Bug Screenshot
-![Bug Image](images/image.png)
-<br><br><br><br>
+![Bug Image](images/image11.png)
+![Bug Image](images/image12.png)
+### 🐞 ** In Depth Analysis Report – Patient Records Missing from All Patient List**
+
+**🗓️ Date Found:** 27th May
+**🕓 Time Found:** 4:10 PM
+
+#### **Summary:**
+
+A major bug was identified where patients who arrived late (after their scheduled appointment time) were **removed from the “All Patient” list** instead of being reassigned when their doctor took unexpected leave.
+
+#### **Scenario:**
+
+* 3 patients had appointments at **9:00 AM** but arrived at **2:00 PM**.
+* At **1:00 PM**, the assigned doctor went on leave.
+* The system should have **reassigned these patients** to another available doctor and kept them in the **"All Patient" list**.
+* **Instead,** these patients **disappeared from the system**, as if they had been marked as completed.
+
+#### **Root Assumption:**
+
+It seems the system incorrectly assumed the appointments were completed when the doctor went on leave, and thus **removed the patients from the active queue**.
+
+#### **Trigger:**
+
+Assigning a doctor who later **went on leave mid-shift**.
+
+
+
+
 
 ---
 
+.<br><br><br><br>
 ## 🧑‍💼 User: Call Center
 
 ### 📅 Appointment Module
