@@ -15,6 +15,7 @@ This document presents a structured and well-documented list of issues discovere
 * **Location:** `All Doctor List > Edit` and `Create Doctor`
 * **Issue:** The phone number field accepts alphabets and special characters.
 * **Expected:** Only numeric input should be accepted.
+* ![Bug Image](images/image1.png)
 
 #### 🐞 Bug 2: Slot Booking – No Clear/Delete Option
 
