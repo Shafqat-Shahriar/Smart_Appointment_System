@@ -8,13 +8,13 @@
 
 
 ---
-
+<!--
 ## 🐞 Bug: Edit Button Not Working on Page 2 of All Doctor List
 
 * **Location:** `All Doctor List > Page 2`
 * **Issue:** The "Edit" button does not respond or load the edit modal/page for doctors listed on the second page.
 * **Expected Behavior:** Clicking "Edit" should allow modifying doctor details regardless of pagination.
-
+-->
 ---
 
 ## 🐞 Bug: Manual Slot Entry Conflicts with Auto Generate
@@ -25,7 +25,9 @@
 
 ---
 
+<!--
 ## 🐞 Bug: Doctor Code Reuse Issue
+
 
 * **Scenario:**
   - Create a doctor with code: `"abcd"`
@@ -35,3 +37,4 @@
 * **Expected Behavior:** After deletion, the system should **free up the doctor code** for reuse or at least **provide a clear message** that it's reserved.
 
 ---
+-->
