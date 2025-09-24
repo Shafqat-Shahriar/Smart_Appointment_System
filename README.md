@@ -67,12 +67,14 @@ This system was developed to digitize and optimize the appointment management pr
   * Role-specific behavior issues
   * Slot logic errors
   * Edge case handling
+  * etc
 * Testing scope includes:
 
   * Validation (e.g., phone number fields)
   * Slot management behavior
   * Data visibility across roles
   * Appointment integrity during leave conflicts
+  * etc
 
 📄 Refer to the `Bug Testing Report` for detailed findings and recommendations.
 
