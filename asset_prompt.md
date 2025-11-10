@@ -16,3 +16,12 @@ Table column headers:
 # Vendor eg. Fashion Optics, Iris Enterprise
 # Installation dates eg. 10/11/2025
 # Value eg. 12454.00, 45000.00 ( all currency amount )
+
+
+
+
+
+
+prompt 2:
+
+it could be like, I need to add more location and other types of their categories later, the admin must have the ability to add more types u know
